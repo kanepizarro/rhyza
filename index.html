@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+  <style>
+    * { font-family: 'Montserrat', sans-serif; box-sizing: border-box; outline: none; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --negro: #000000;
+      --gris: #121212;
+      --naranja: #FDA408;
+      --amarillo: #FFC004;
+      --blanco: #F2F2F2;
+    }
+    body { background-color: var(--negro); color: var(--blanco); }
+    .nav-blur { background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); }
+    .hero-bg { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=1500'); background-size: cover; background-position: center; }
+    .btn-rhyza { background: var(--naranja); color: #000; font-weight: 900; transition: 0.3s; }
+    .btn-rhyza:hover { background: var(--amarillo); transform: scale(1.05); }
+    .card-project { background: var(--gris); border: 1px solid #333; overflow: hidden; border-radius: 15px; }
+  </style>
+  <title>RHYZA | Arquitectura Interior & Diseño Gastronómico</title>
+</head>
+<body class="antialiased">
+
+  <nav class="nav-blur fixed top-0 w-full z-50 p-5 border-b border-zinc-900">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <div class="text-2xl font-black italic uppercase tracking-tighter">RHYZA</div>
+      <div class="hidden md:flex gap-8 text-[10px] font-extrabold uppercase tracking-widest">
+        <a href="#servicios" class="hover:text-[var(--naranja)] transition">Servicios</a>
+        <a href="#portfolio" class="hover:text-[var(--naranja)] transition">Portafolio</a>
+        <a href="#proceso" class="hover:text-[var(--naranja)] transition">Nuestro Método</a>
+      </div>
+      <a href="https://wa.me/51985455656" class="text-[var(--naranja)]">
+        <span class="iconify" data-icon="mdi:whatsapp" data-width="28"></span>
+      </a>
+    </div>
+  </nav>
+
+  <header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center p-6 pt-24">
+    <h2 class="text-[10px] md:text-xs font-bold text-[var(--amarillo)] uppercase tracking-[0.5em] mb-6">Expertos en Locales Gastronómicos</h2>
+    <h1 class="text-4xl md:text-7xl font-black uppercase italic italic tracking-tighter leading-none mb-8">
+      TRANSFORMAMOS <br> <span class="text-[var(--naranja)]">ESPACIOS EN NEGOCIOS</span>
+    </h1>
+    <p class="text-sm md:text-lg text-zinc-400 max-w-2xl mb-12">
+      No solo diseñamos interiores; creamos experiencias funcionales que maximizan la rentabilidad de tu restaurante o cafetería. <b>Renders 3D</b> y <b>Planos de Detalle</b> de alta precisión.
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+      <a href="#servicios" class="btn-rhyza px-10 py-5 rounded-full uppercase text-xs">Ver Servicios</a>
+      <a href="https://wa.me/51985455656" class="border border-white/20 px-10 py-5 rounded-full uppercase text-xs font-bold hover:bg-white/10 transition">Hablar con un Experto</a>
+    </div>
+  </header>
+
+  <section id="servicios" class="p-8 md:p-24 max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+      <h3 class="text-3xl md:text-5xl font-black uppercase italic italic tracking-tighter">DISEÑO CON <br><span class="text-[var(--naranja)]">SENTIDO LÓGICO</span></h3>
+      <p class="text-zinc-500 text-xs md:max-w-xs uppercase font-bold tracking-widest">Soluciones técnicas para emprendedores que no dejan nada al azar.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="card-project p-8">
+        <span class="iconify text-5xl text-[var(--naranja)] mb-6" data-icon="mdi:view-in-ar"></span>
+        <h4 class="text-xl font-black uppercase italic mb-4">Renders 3D</h4>
+        <p class="text-xs text-zinc-500 leading-relaxed">Visualización realista total para que asegures cada detalle antes de invertir en la obra.</p>
+      </div>
+      <div class="card-project p-8">
+        <span class="iconify text-5xl text-[var(--naranja)] mb-6" data-icon="mdi:floor-plan"></span>
+        <h4 class="text-xl font-black uppercase italic mb-4">Planos UX</h4>
+        <p class="text-xs text-zinc-500 leading-relaxed">Diseño funcional orientado a la experiencia del usuario y flujos de trabajo eficientes.</p>
+      </div>
+      <div class="card-project p-8">
+        <span class="iconify text-5xl text-[var(--naranja)] mb-6" data-icon="mdi:tools"></span>
+        <h4 class="text-xl font-black uppercase italic mb-4">Detalle Técnico</h4>
+        <p class="text-xs text-zinc-500 leading-relaxed">Planos técnicos exactos para fabricación de muebles y acabados. Sin improvisaciones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="bg-zinc-900/50 p-8 md:p-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="h-[400px] rounded-2xl overflow-hidden relative group">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/40 p-10 flex flex-col justify-end">
+            <span class="text-[var(--naranja)] font-black text-xs uppercase mb-2">Proyecto Cafetería</span>
+            <h5 class="text-2xl font-black uppercase italic italic">Espacios que venden</h5>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+          <div class="h-[192px] rounded-2xl overflow-hidden relative group">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end">
+              <h5 class="text-lg font-black uppercase italic italic">Restaurantes de Autor</h5>
+            </div>
+          </div>
+          <div class="h-[192px] rounded-2xl overflow-hidden relative group">
+             <img src="https://i.pinimg.com/736x/27/b0/83/27b083e72d7876f9e075863a3f87fa84.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end border-l-4 border-[var(--naranja)]">
+              <h5 class="text-lg font-black uppercase italic italic text-[var(--naranja)]">Ingeniería Interior</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proceso" class="p-8 md:p-24 max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-black uppercase italic mb-16 italic">NUESTRO <span class="text-[var(--naranja)]">MÉTODO</span></h3>
+    <div class="space-y-12">
+      <div class="flex flex-col md:flex-row items-center gap-8 text-left border-b border-zinc-800 pb-12">
+        <div class="text-6xl font-black text-zinc-800">01</div>
+        <div>
+          <h4 class="text-lg font-black uppercase italic mb-2">Visita Técnica & Briefing</h4>
+          <p class="text-xs text-zinc-500">Analizamos el espacio físico y el modelo de negocio para definir la ruta de diseño.</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-8 text-left border-b border-zinc-800 pb-12">
+        <div class="text-6xl font-black text-zinc-800">02</div>
+        <div>
+          <h4 class="text-lg font-black uppercase italic mb-2">Visualización 3D & UX</h4>
+          <p class="text-xs text-zinc-500">Desarrollamos el concepto visual y optimizamos los flujos de trabajo del local.</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-8 text-left">
+        <div class="text-6xl font-black text-zinc-800">03</div>
+        <div>
+          <h4 class="text-lg font-black uppercase italic mb-2">Carpeta Técnica de Obra</h4>
+          <p class="text-xs text-zinc-500">Entrega de planos de detalle, materiales y asesoría para la ejecución final.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="p-12 md:p-24 border-t border-zinc-900 text-center">
+    <h4 class="text-2xl md:text-4xl font-black uppercase italic mb-12 italic tracking-tighter">¿Alguna duda? Pregunta.</h4>
+    <a href="https://wa.me/51985455656" class="btn-rhyza inline-flex items-center gap-4 px-12 py-6 rounded-full uppercase text-sm mb-16">
+      <span class="iconify" data-icon="mdi:whatsapp" data-width="24"></span>
+      Escríbenos directamente
+    </a>
+    
+    <div class="flex flex-col items-center gap-6">
+      <div class="text-3xl font-black italic tracking-tighter uppercase">RHYZA</div>
+      <p class="text-[9px] font-bold text-zinc-700 uppercase tracking-[0.5em]">Arquitectura Interior Gastronómica &copy; 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
